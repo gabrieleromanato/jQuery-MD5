@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery: md5()</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+
+<p><a href="#" id="convert">md5()</a></p>
+
+<div id="test">Test</div>​
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.md5.js"></script>
+<script type="text/javascript">
+$(function() {
+
+	$('#convert').click(function() {
+
+          var $str = $('#test').text();
+
+
+           $('#test').text($.md5($str));
+
+           return false;
+
+
+    });
+
+
+});
+</script>
+
+</body>
+</html>
